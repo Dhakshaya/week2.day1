@@ -16,29 +16,29 @@ public class FindTypes {
                 		letter++;        // Count of Letter    
                 	
                 	}
-                	if(Character.isDigit(ch[i]))
+                	else if(Character.isDigit(ch[i]))
                 	{
                 		num++;         // Count of num        		
                 	
                 	}
-                	if(Character.isWhitespace(ch[i]))
+                	else if(Character.isSpaceChar(ch[i]))
                 	{ 
                 		space++;      	 // Count of space        	     	
                 	}
-                	if(Character.isSpaceChar(ch[i]))
-                	{
+                	
+                	else 
+                	{              		
                 		
+                		specialChar++;  // Count of specialCharacter
                 		
-                		specialChar++;  // Count of special  
-                		
-                		
+                		               		
                 	}
                 
                 }
                 System.out.println("letter: " + letter);
                 System.out.println("number: " + num);
                 System.out.println("space: " + space);	
-                System.out.println("specialCharcter: " + specialChar);
+                System.out.println("specialChar: " + specialChar);
 	
 	}
 }
