@@ -15,14 +15,16 @@ public class Anagram {
 			char[] chtext1 = text1.toCharArray();
 			char[] chtext2 = text1.toCharArray();
 			Arrays.sort(chtext1);
+		//	System.out.println(chtext1);
 			Arrays.sort(chtext2);
-			
-			if(chtext1.equals(chtext2))
+		//	System.out.println(chtext2);
+				
+			if(Arrays.equals(chtext1,chtext2))
 			{
 				System.out.println("Anagram");
 			}
-			
 				}
+				
 			
 				
 				
